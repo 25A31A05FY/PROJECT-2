@@ -1,0 +1,30 @@
+ a) Keyword Detection
+Checks for suspicious words like:
+login, verify, secure, update, free, bonus
+Logic:
+If any keyword is found → mark as suspicious
+Reason:
+Phishing URLs often use urgency or reward-based words
+ b) Number Detection
+Checks if the URL contains digits
+Reason:
+Fraudulent domains often include random numbers to mimic legit sites
+ c) Length Check
+Flags URLs longer than 40 characters
+Reason:
+Attackers use long URLs to hide malicious parts
+ d) HTTPS Verification
+Checks if URL starts with https://
+Reason:
+Secure websites use HTTPS encryption
+3. Decision Engine
+A boolean flag suspicious is used
+If any rule fails:
+→ URL is marked fraudulent
+Otherwise:
+→ URL is marked safe
+4. Output Generation
+Displays warnings for each triggered rule
+Final result:
+ Fraud Link → Access Blocked
+ Safe Link → Access Granted
