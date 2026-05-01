@@ -1,0 +1,20 @@
+Functional Requirements
+Accept a URL as input
+Detect:
+Suspicious keywords
+Presence of numbers
+URL length
+HTTPS usage
+Display warnings
+Provide final classification (Safe / Fraud)
+Non-Functional Requirements
+Simple and fast execution
+Easy to understand logic
+No external dependencies
+Runs on any standard C++ compiler
+🛠️ System Requirements
+C++ compiler (e.g., GCC)
+Standard libraries:
+<iostream>
+<string>
+<cctype>
